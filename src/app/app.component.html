@@ -1,0 +1,11 @@
+<div>--- Directives simples ---------------------------------------------------</div>
+<button type="radio" name="background" (click)="setBackground('red')">A</button>
+<button type="radio" name="background" (click)="setBackground('teal')">B</button>
+<button type="radio" name="background" (click)="setBackground('pink')">C</button>
+<div>No directive</div>
+<div [appMyDirective]="background">With directive</div>
+<div>-------------------------------------------------------------------------------</div>
+<app-parent1></app-parent1>
+<app-parent2></app-parent2>
+<app-keyof-typeof></app-keyof-typeof>
+

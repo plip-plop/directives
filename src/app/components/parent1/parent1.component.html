@@ -1,0 +1,19 @@
+
+<div>--- @ViewChildren (app-enfant1): Récupération de valeurs par méthode ---------------------------------------------------</div>
+<div><button (click)="appelerEnfants()">appelerEnfants</button></div>
+<p>Input-1</p>
+<app-enfant1 #view1Directive></app-enfant1>
+<p>Input-2</p>
+<app-enfant1 #view1Directive></app-enfant1>
+<div>TEXTE (input-1, input-2): {{texte}}</div>
+<div>-------------------------------------------------------------------------------</div>
+<div>--- @ViewChildren (app-enfant2): Souscription aux changements ---------------------------------------------------</div>
+<p>INPUT 3:</p>
+<app-enfant2 [cliquerDirective]="'plop'"></app-enfant2>
+<p>INPUT 4:</p>
+<app-enfant2 [cliquerDirective]="'plop'"></app-enfant2>
+<div>-------------------------------------------------------------------------------</div>
+
+
+
+
